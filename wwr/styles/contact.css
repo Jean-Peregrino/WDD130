@@ -1,0 +1,238 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Define color variables */
+:root {
+  --primary-color: #144380ce;
+  --secondary-color: #0080c0;
+  --text-color: #333;
+  --background-color: #fff;
+  }
+  
+  /* Basic styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  }
+  
+/* Header styling */
+header {
+  margin: auto;
+  display: grid;
+  grid-template-columns:  1fr 2fr;
+  align-items:center;
+  border-bottom: 1px solid #ccc;
+  max-width: 1000px;
+  background-color: var(--primary-color);
+  color: #fff;
+ 
+  }
+  
+  header img {
+    margin: 0 0.25rem 0 1rem;
+	  width: 64px;
+	  height: auto;
+    border-radius: 50%;
+  }
+    
+  nav {
+    text-align: center;
+  }
+    
+  .navigation {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navigation li {
+    flex: 1 1 100%;
+  }
+  
+  .navigation a {
+    display: block;
+    color: rgb(213, 213, 236);
+    padding: 20px;
+    text-decoration: none;
+  }
+  
+  .navigation a:hover {
+    color: tomato;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  
+  }
+  h2{
+    color: rgb(12, 12, 85);
+    padding: 20px;
+    text-decoration: none;
+
+  }
+  
+  /* Estilo para las imágenes de perfil de los empleados y sus subtítulos */
+ 
+  section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+
+  section img {
+    display: block;
+    width: 100%
+   
+  }
+
+  .employee {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto auto;
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row; 
+
+  }
+       
+  .employee figure {
+    border: thin #070527 solid;
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    padding: 10px;
+    max-width: 1000px; 
+    margin: 10px 50px; 
+    box-sizing: border-box; 
+  }
+  
+  .employee img {
+    max-width: 60%;
+    max-height: none;
+  }
+  
+  .employee figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+  }
+
+/* Estilo para el formulario */
+form {
+  max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Center the content horizontally */
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form select,
+form textarea {
+  width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background-color: #150c46f6;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* Make the button full-width */
+}
+
+form label.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+form input[type="checkbox"] {
+  margin-right: 1px;
+}
+
+/* Estilo para el mapa */
+.map {
+  margin-top: 20px;
+}
+
+/* Estilo para las redes sociales en el pie de página */
+.sociallinks a {
+  margin-right: 10px;
+}
+
+/* Estilo para la imagen del mapa en el boceto de la estructura alámbrica */
+.map img {
+  max-width: 100%;
+  height: auto;
+}
+
+  
+  
+  footer {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  footer nav {
+    display: flex;
+    align-items: center;
+}
+  
+  footer a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  .sociallinks {
+    display: flex; 
+    align-items: center;
+  }   
+
+  .sociallinks a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+  }
+  
+  .sociallinks img {
+    max-width: 30px;
+    height: auto;
+    
+  }
+
